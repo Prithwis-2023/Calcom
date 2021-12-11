@@ -230,9 +230,9 @@ def main():
       import numpy as np
       import tkinter as tk
       from tkinter import Tk, BOTTOM, BOTH
-      print("*********************************************\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================\nMandlebrot Sets\n=============================================")
+      print("*********************************************\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================")
       d=input("Please enter the type of the function: ")
-      f_list = ["Plane Trigonometric", "Exponential", "Logarithmic", "Polynomial", "Julia Sets", "Mandlebrot Sets"]
+      f_list = ["Plane Trigonometric", "Exponential", "Logarithmic", "Polynomial", "Julia Sets"]
       while (d not in f_list):
         print("Wrong Input! Please try again.")
         d = input("Please enter the type of the function: ")
@@ -510,7 +510,7 @@ def main():
            plt.axis('off')
            plt.show()
            fig.savefig('julia_set.png', dpi=500)   
-        c = complex(input("Enter the complex number c: ")) 
+        c = complex(input("Enter the complex number c (Eg. 1+2j): ")) 
         julia_set(c)                   
     while True:
       graphs()
