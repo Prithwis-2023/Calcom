@@ -10,12 +10,12 @@ print("""
 ░╚════╝░╚═╝░░╚═╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝  ╚══════╝╚═╝╚══════╝╚═╝░╚════╝░""")
 #name = input("Please enter your name [Discord usernames are also valid]: ")
 #insertRow.append(name)
-print("***************************************************************************************************")
+print("<------------------------------------------------------------------------------------------------->")
 print("Welcome to Calcom! Here you can perform basic arithmetic operations and many more. You will receive instructions (if necessary) for every feature you would use. Remember, if you feel any feature is missing, always use the MiniCalc to complete your calculation. But, remember! Once you close MiniCalc after performing all operations, you will not be able to open it again in a session. So it's recommended to use it at the end, when you are done with all calculations.")
 
 def main():
 #Start of code and action
-  print("***************************************************************************************************")
+  print("<------------------------------------------------------------------------------------------------->")
   print(f"Please select from the following operations:")
   print("=============================================")
   print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================")
@@ -230,7 +230,7 @@ def main():
       import numpy as np
       import tkinter as tk
       from tkinter import Tk, BOTTOM, BOTH
-      print("*********************************************\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================")
+      print("<------------------------------------------->\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================")
       d=input("Please enter the type of the function: ")
       f_list = ["Plane Trigonometric", "Exponential", "Logarithmic", "Polynomial", "Julia Sets"]
       while (d not in f_list):
@@ -541,7 +541,7 @@ def main():
       from scipy.integrate import quad
       #exp = input("Enter the expression: ")
       from numpy import sqrt, sin, cos, pi, exp
-      print("*********************************************\nDifferentiation\n=============================================\nIntegration\n=============================================\nFind Jacobian\n=============================================")
+      print("<------------------------------------------->\nDifferentiation\n=============================================\nIntegration\n=============================================\nFind Jacobian\n=============================================")
       opt = input("Enter the option: ")
       f_list = ["Differentiation", "Integration", "Find Hessian", "Find Jacobian"]
       while (opt not in f_list):
@@ -555,7 +555,7 @@ def main():
           type = input(f"Enter the type of function (Single-Variable/Multi-Variable): ")
         if type == "Single-Variable":
           print("Use x as the variable.")
-          print("*********************************************")
+          print("<------------------------------------------->")
           x = sp.Symbol('x')
           exp = input(f"Enter the function: ")
           sol = sp.diff(exp)
@@ -563,7 +563,7 @@ def main():
           print(sol)
         elif type == "Multi-Variable":
           print("Use only lowercase alphabets as variables.")
-          print("*********************************************")
+          print("<------------------------------------------->")
           v = int(input("Please enter the number of variables: "))
           a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z = sp.symbols('a b c d e f g h i j k l m n o p q r s t u v w x y z')
           exp = input("Enter the function: ")
@@ -572,7 +572,7 @@ def main():
           print("====================Result=======================")
           print(sol)
       elif opt == "Integration":
-        print("*********************************************\nSingle Integration\n=============================================\nDouble Integration\n=============================================\nTriple Integration\n=============================================")
+        print("<------------------------------------------->\nSingle Integration\n=============================================\nDouble Integration\n=============================================\nTriple Integration\n=============================================")
         f_list = ["Single Integration", "Double Integration", "Triple Integration"]
         opt = input("Enter the option: ")
         while (opt not in f_list):
@@ -604,7 +604,7 @@ def main():
               init_printing(use_unicode=False, wrap_line=False)
               x,y=symbols('x y')
               print("Currently, you can only perform indefinite integration. Use only x, y as the variables of integration. Use of other alphabets shall be treated as constants.")
-              print("**************************************************************")
+              print("<------------------------------------------->")
               exp=input("Enter the expression: ")
               exp_list = [char for char in exp]
               for i in range(len(exp_list)):
@@ -726,7 +726,7 @@ def main():
 
   elif E == "Combinatorial Calculations":
     def combo():
-        print("*********************************************\nFactorial Calculations\n=============================================\nP & C\n=============================================\nAverage Value of Dice Throw\n=============================================")
+        print("<------------------------------------------->\nFactorial Calculations\n=============================================\nP & C\n=============================================\nAverage Value of Dice Throw\n=============================================")
         f_list = ["Factorial Calculations", "P & C", "Average Value of Dice Throw"]
         q_s = input("Enter the operation: ")
         while (q_s not in f_list):
@@ -739,7 +739,7 @@ def main():
               fact = fact*a
             print(fact)
         elif q_s == "P & C":
-            print("*********************************************\nPermutation\n=============================================\nCombination\n=============================================")
+            print("<------------------------------------------->\nPermutation\n=============================================\nCombination\n=============================================")
             f_list = ["Permutation", "Combination"]
             a=input("Enter the operation: ")
             while (a not in f_list):
@@ -809,7 +809,7 @@ def main():
 
   elif E == "Area Calculations":
     def area():
-        print("*********************************************\nSquare\n=============================================\nRectangle\n=============================================\nTriangle\n=============================================\nParallelogram\n=============================================\nRhombus\n=============================================\nSphere\n=============================================\nTrapezium\n=============================================\nCircle\n=============================================\nRight Circular Cylinder\n=============================================\nRight Circular Cone\n=============================================")
+        print("<------------------------------------------->\nSquare\n=============================================\nRectangle\n=============================================\nTriangle\n=============================================\nParallelogram\n=============================================\nRhombus\n=============================================\nSphere\n=============================================\nTrapezium\n=============================================\nCircle\n=============================================\nRight Circular Cylinder\n=============================================\nRight Circular Cone\n=============================================")
         a_t = input(f"Enter the shape name: ")
         f_list = ["Square", "Rectangle", "Triangle", "Parallelogram", "Rhombus","Sphere", "Trapezium", "Circle", "Right Circular Cylinder","Right Circular Cone"]
         while (a_t not in f_list):
@@ -896,7 +896,7 @@ def main():
     
   elif E == "Volume Calculations":
     def volume():
-          print("*********************************************\nCube\n=============================================\nCuboid\n=============================================\nSphere\n=============================================\nRight Circular Cone\n=============================================\nRight Circular Cylinder\n=============================================\nPrism\n=============================================\nRight Rectangular/Square Pyramidal\n=============================================\nEllipsoid\n=============================================\nTetrahedron\n=============================================")
+          print("<------------------------------------------->\nCube\n=============================================\nCuboid\n=============================================\nSphere\n=============================================\nRight Circular Cone\n=============================================\nRight Circular Cylinder\n=============================================\nPrism\n=============================================\nRight Rectangular/Square Pyramidal\n=============================================\nEllipsoid\n=============================================\nTetrahedron\n=============================================")
           f_list = ["Cube", "Cuboid", "Sphere", "Right Circular Cone", "Right Circular Cylinder", "Prism", "Right Rectangular/Square Pyramidal", "Ellipsoid", "Tetrahedron"]
           o = input("Enter the shape: ") 
           while (o not in f_list):
@@ -940,7 +940,7 @@ def main():
 
           elif o == "Prism":
                 print("As you know it... For a square prism, both the length and breadth are the same!")
-                print("*******************************************************************************")
+                print("<----------------------------------------------------------------------------->")
                 l = float(input("Enter the length of the base: "))
                 b = float(input("Enter the breadth of the base: "))
                 h = float(input("Enter the height of the prism: "))
@@ -949,7 +949,7 @@ def main():
 
           elif o == "Right-Rectangular/Square-Pyramidal":
                 print("For Square Pyramid, both the length and breadth are the same.")
-                print("*************************************************************")
+                print("<----------------------------------------------------------->")
                 l = float(input("Enter the base length: "))
                 b = float(input("Enter the base width: "))
                 h = float(input("Enter the height: "))
@@ -1139,7 +1139,7 @@ def main():
     def dimensions(A) :
           return np.sum(la.norm(gsBasis(A), axis=0))      
     def linalg():
-      print("*********************************************\nAddition\n=============================================\nSubtraction\n=============================================\nMultiplication\n=============================================\nSingularity Check\n=============================================\nBasis\n=============================================\nCalculate Dimension\n=============================================")
+      print("<------------------------------------------->\nAddition\n=============================================\nSubtraction\n=============================================\nMultiplication\n=============================================\nSingularity Check\n=============================================\nBasis\n=============================================\nCalculate Dimension\n=============================================")
       f_list = ["Addition", "Subtraction", "Multiplication", "Singularity Check", "Basis", "Calculate Dimension"]
       opt = input("Enter the option: ")
       while (opt not in f_list):
@@ -1392,7 +1392,7 @@ def main():
         return weight_list
         
     def means():
-      mean_list = ['*********************************************', 'Arithmetic Mean', '=============================================', 'Geometric Mean', '=============================================', 'Harmonic Mean', '=============================================', 'Weighted Arithmetic Mean', '=============================================', 'Weighted Geometric Mean', '=============================================', 'Weighted Harmonic Mean', '=============================================']
+      mean_list = ['<------------------------------------------->', 'Arithmetic Mean', '=============================================', 'Geometric Mean', '=============================================', 'Harmonic Mean', '=============================================', 'Weighted Arithmetic Mean', '=============================================', 'Weighted Geometric Mean', '=============================================', 'Weighted Harmonic Mean', '=============================================']
       for mean_type in mean_list:
           print(mean_type)
 
@@ -1450,7 +1450,7 @@ def main():
   elif E == "Fun Zone":
     print("Welcome to the Calcom Fun-Zone. We have the following features:")
     def fun():
-      print("*********************************************\nDrawing\n=============================================\nPig (Dice Game)\n=============================================\nPlay Connect4\n=============================================")
+      print("<------------------------------------------->\nDrawing\n=============================================\nPig (Dice Game)\n=============================================\nPlay Connect4\n=============================================")
       f_list = ["Drawing", "Pig (Dice Game)", "Play Connect4"]
       option = input("Enter the option of your choice: ")
       while (option not in f_list):
@@ -1666,7 +1666,7 @@ def main():
     import math
     def nt_i():
       print("Calcom has the following features for Number Theory:")
-      print("*********************************************\nPrime Identification\n=============================================\nPrime Factorization\n=============================================\nDivisibility Test\n=============================================\nSum of Factors\n=============================================\nNumber of Factors\n=============================================\nExponent of a Prime in Prime Factorization\n=============================================\nDiophantine Equations\n=============================================\nPartitions\n=============================================\nG.C.D\n=============================================\nL.C.M\n=============================================")
+      print("<------------------------------------------->\nPrime Identification\n=============================================\nPrime Factorization\n=============================================\nDivisibility Test\n=============================================\nSum of Factors\n=============================================\nNumber of Factors\n=============================================\nExponent of a Prime in Prime Factorization\n=============================================\nDiophantine Equations\n=============================================\nPartitions\n=============================================\nG.C.D\n=============================================\nL.C.M\n=============================================")
       f_list = ["Prime Identification", "Divisibility Test", "Diophantine Equations", "Partitions", "G.C.D", "L.C.M", "Prime Factorization", "Sum of Factors", "Number of Factors", "Exponent of a Prime in Prime Factorization"]
       g = input("Enter the option: ")
       while (g not in f_list):
