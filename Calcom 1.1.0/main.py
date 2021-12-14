@@ -1,5 +1,6 @@
 import time
 import webbrowser
+import Flask
 insertRow = []
 print("""
 ░█████╗░░█████╗░██╗░░░░░░█████╗░░█████╗░███╗░░░███╗  ░░███╗░░░░░░░███╗░░░░░░█████╗░
@@ -109,9 +110,12 @@ def main():
   elif E == "Logarithmic Operations":
     import math
     def log():
-      a=float(input("Enter the number: "))
-            #import math
-      print(math.log(a))
+      arg = float(input("Enter the argument: "))
+      base = float(input("Enter the base: "))
+      while (base < 0):
+       print("Please enter a valid base.")
+       base = float(input("Enter the base: ")) 
+      print(math.log(base, arg))
     while True:
       log()
       contin = ""
@@ -1111,7 +1115,7 @@ def main():
 
 
   elif E == "MiniCalc":
-    import MiniCalc
+    pass
 
   elif E == "Linear Algebra":
     import tkinter as tk
