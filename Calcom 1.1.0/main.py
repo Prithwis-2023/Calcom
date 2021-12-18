@@ -1,6 +1,5 @@
 import time
 import webbrowser
-import Flask
 insertRow = []
 print("""
 ░█████╗░░█████╗░██╗░░░░░░█████╗░░█████╗░███╗░░░███╗  ░░███╗░░░░░░░███╗░░░░░░█████╗░
@@ -1115,8 +1114,30 @@ def main():
 
 
   elif E == "MiniCalc":
-    pass
-
+    import wolframalpha
+    print("Notice: MiniCalc has now been powered by Wolfram Aplha.")
+    print("<----------------------------------------------------->")
+    def wolfram():
+        input_wolfram = raw_input("Enter your expression:")
+        add_id = 'UY8J28-KPKYW5Y2RT'
+        client = wolframalpha.client(app_id)
+        result = client.query(input_wolfram)
+        answer = next(result.results).text
+        print("<------------------------------------------------------------->")
+        print(answer)
+    while True:
+      wolfram()
+      contin = ""
+      if contin not in ["no", "n", "yes", "y"]:
+        contin = input(f"Do you wish to enter another calculation in Basic Operations? (Yes/No): ")
+        wish = ["Yes", "No"]
+        while (contin not in wish):
+          print("Wrong Input! Please try again.")
+          contin = input(f"Do you wish to enter another calculation? (Yes/No): ")
+        if contin.lower() in ["no", "n"]:
+            break
+        elif contin.lower() in ["yes", "y"]:
+            continue
   elif E == "Linear Algebra":
     import tkinter as tk
     import numpy as np
