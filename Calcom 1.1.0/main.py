@@ -1118,9 +1118,9 @@ def main():
     print("Notice: MiniCalc has now been powered by Wolfram Aplha.")
     print("<----------------------------------------------------->")
     def wolfram():
-        input_wolfram = raw_input("Enter your expression:")
-        add_id = 'UY8J28-KPKYW5Y2RT'
-        client = wolframalpha.client(app_id)
+        input_wolfram = input("Enter your expression:")
+        app_id = "UY8J28-KPKYW5Y2RT"
+        client = wolframalpha.Client(app_id)
         result = client.query(input_wolfram)
         answer = next(result.results).text
         print("<------------------------------------------------------------->")
@@ -1129,7 +1129,7 @@ def main():
       wolfram()
       contin = ""
       if contin not in ["no", "n", "yes", "y"]:
-        contin = input(f"Do you wish to enter another calculation in Basic Operations? (Yes/No): ")
+        contin = input(f"Do you wish to enter another calculation in MiniCalc? (Yes/No): ")
         wish = ["Yes", "No"]
         while (contin not in wish):
           print("Wrong Input! Please try again.")
