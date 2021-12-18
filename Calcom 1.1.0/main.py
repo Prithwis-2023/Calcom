@@ -11,11 +11,11 @@ print("""
 #name = input("Please enter your name [Discord usernames are also valid]: ")
 #insertRow.append(name)
 print("<------------------------------------------------------------------------------------------------->")
-print("Welcome to Calcom! Here you can perform basic arithmetic operations and many more. You will receive instructions (if necessary) for every feature you would use. Remember, if you feel any feature is missing, always use the MiniCalc to complete your calculation. But, remember! Once you close MiniCalc after performing all operations, you will not be able to open it again in a session. So it's recommended to use it at the end, when you are done with all calculations.")
+#print("Welcome to Calcom! Here you can perform basic arithmetic operations and many more. You will receive instructions (if necessary) for every feature you would use. Remember, if you feel any feature is missing, always use the MiniCalc to complete your calculation. But, remember! Once you close MiniCalc after performing all operations, you will not be able to open it again in a session. So it's recommended to use it at the end, when you are done with all calculations.")
 
 def main():
 #Start of code and action
-  print("<------------------------------------------------------------------------------------------------->")
+  #print("<------------------------------------------------------------------------------------------------->")
   print(f"Please select from the following operations:")
   print("=============================================")
   print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================")
@@ -1115,16 +1115,18 @@ def main():
 
   elif E == "MiniCalc":
     import wolframalpha
-    print("Notice: MiniCalc has now been powered by Wolfram Aplha.")
     print("<----------------------------------------------------->")
     def wolfram():
-        input_wolfram = input("Enter your expression:")
+        input_wolfram = input("Enter your expression/question: ")
         app_id = "UY8J28-KPKYW5Y2RT"
         client = wolframalpha.Client(app_id)
         result = client.query(input_wolfram)
-        answer = next(result.results).text
-        print("<----------------------------------------------------->")
-        print(answer)
+        try:
+          answer = next(result.results).text
+          print("<----------------------------------------------------->")
+          print(answer)
+        except StopIteration:
+          print("Invalid Question.")  
     while True:
       wolfram()
       contin = ""
