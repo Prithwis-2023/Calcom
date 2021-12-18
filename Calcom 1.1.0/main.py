@@ -1123,7 +1123,7 @@ def main():
         client = wolframalpha.Client(app_id)
         result = client.query(input_wolfram)
         answer = next(result.results).text
-        print("<------------------------------------------------------------->")
+        print("<----------------------------------------------------->")
         print(answer)
     while True:
       wolfram()
