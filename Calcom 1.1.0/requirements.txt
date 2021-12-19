@@ -10,6 +10,7 @@ Babel==2.9.1
 backcall==0.2.0
 backports.entry-points-selectable==1.1.1
 bcrypt==3.1.7
+beautifulsoup4==4.10.0
 bleach==4.1.0
 blinker==1.4
 bottle==0.12.19
@@ -30,6 +31,7 @@ cryptography==3.3.2
 cs50==8.0.0
 cupshelpers==1.0
 cycler==0.10.0
+Cython==0.29.25
 DateTime==4.3
 dbus-python==1.2.16
 debugpy==1.5.1
@@ -79,6 +81,7 @@ ipykernel==6.6.0
 ipython==7.30.1
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
+jaraco.context==4.1.1
 jedi==0.18.1
 jeepney==0.7.1
 Jinja2==2.11.3
@@ -133,6 +136,7 @@ pandocfilters==1.5.0
 paramiko==2.7.2
 parso==0.8.3
 pastel==0.2.1
+pbr==5.8.0
 penaltymodel==0.16.5
 penaltymodel-cache==0.4.4
 penaltymodel-lp==0.1.5
@@ -200,6 +204,7 @@ simplejson==3.17.2
 six==1.16.0
 sniffio==1.2.0
 sockets==1.0.0
+soupsieve==2.3.1
 SQLAlchemy==1.4.28
 sqlparse==0.4.2
 symengine==0.8.1
@@ -208,6 +213,7 @@ systemd-python==234
 termcolor==1.1.0
 terminado==0.12.1
 testpath==0.5.0
+testresources==2.0.1
 tk==0.1.0
 tomlkit==0.7.2
 tornado==6.1
@@ -228,10 +234,12 @@ webencodings==0.5.1
 websocket-client==1.2.1
 Werkzeug==1.0.1
 whichcraft==0.6.1
+wolframalpha==5.0.0
 wordcloud==1.8.1
 wrapt==1.13.3
 xdg==5
 xkit==0.0.0
+xmltodict==0.12.0
 yarg==0.1.9
 zipp==1.0.0
 zope.event==4.5.0
