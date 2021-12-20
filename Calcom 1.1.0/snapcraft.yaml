@@ -6,7 +6,7 @@ description: |
  Calcom by PyCalc X
 base: core18
 grade: stable
-confinement: strict
+confinement: devmode
 
 apps:
   testapp:
@@ -16,5 +16,4 @@ parts:
   calcom-pycalcx:
     plugin: python
     python-version: python3
-    source: 
-    stage-packages: [ncbi-blast+]
+    source: https://github.com/Team-Calcom/Calcom-1.1.0-Repl-/tree/main/Calcom%201.1.0 
