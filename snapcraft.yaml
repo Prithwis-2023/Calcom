@@ -16,4 +16,4 @@ parts:
   calcom-pycalcx:
     plugin: python
     python-version: python3
-    source: https://github.com/Team-Calcom/Calcom-1.1.0-Repl-/tree/main/Calcom%201.1.0 
+    source: https://github.com/Team-Calcom/Calcom-1.1.0-Repl-
