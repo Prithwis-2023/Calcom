@@ -1,1 +1,0 @@
-Calcom is an advanced graphing calculator application created by the developers at PyCalc X.
