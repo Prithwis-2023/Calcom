@@ -10,7 +10,7 @@ confinement: strict
 
 apps:
   calcom:
-    command: bin/calcom
+    command: bin/calcom-pycalcx
     plugs: [home,network-bind]
 parts:
   calcom-pycalcx:
