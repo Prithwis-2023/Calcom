@@ -2,7 +2,7 @@ from setuptools import setup
 import sys,os
 
 setup(
-    name = 'calcom-pycalcx',
+    name = 'calcom-linux',
     version = '1.1.0',
     description = 'Python test package',
     license='GPL v3',
@@ -13,7 +13,7 @@ setup(
     install_requires=['future'],
     entry_points = {
         'console_scripts': [
-            'calcom-pycalcx=src.app:main']
+            'calcom-linux=src.app:main']
             },
     classifiers = ['Operating System :: OS Independent',
             'Programming Language :: Python :: 2.7',
