@@ -6,7 +6,7 @@ description: |
  Calcom by PyCalc X
 base: core18
 grade: stable
-confinement: devmode
+confinement: strict
 
 apps:
   testapp:
