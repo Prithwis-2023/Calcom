@@ -9,8 +9,8 @@ grade: stable
 confinement: strict
 
 apps:
-  testapp:
-    command: bin/calcom-pycalcx
+  calcom:
+    command: bin/calcom
     plugs: [home,network-bind]
 parts:
   calcom-pycalcx:
