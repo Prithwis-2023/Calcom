@@ -14,6 +14,6 @@ apps:
     plugs: [home,network-bind]
 parts:
   calcom-pycalcx:
-    plugin: autotools
+    plugin: python
     python-version: python3
     source: https://github.com/Team-Calcom/Calcom-Repl.git
