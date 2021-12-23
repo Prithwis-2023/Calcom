@@ -17,7 +17,7 @@ def main():
 #Start of code and action
   #print("<------------------------------------------------------------------------------------------------->")
   print(f"Please select from the following operations:")
-  print("=============================================")
+  print("<------------------------------------------->")
   print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================")
   E = input(f"Enter the operation: ")
   feature_list = ["Basic Operations", "Roots of Polynomials", "Logarithmic Operations", "Number Theory", "Trigonometric Operations", "Graphs", "Calculus", "Combinatorial Calculations", "Area Calculations", "Volume Calculations", "Base Conversion", "MiniCalc", "Fun Zone", "Linear Algebra", "Means", "System of Equations"]
