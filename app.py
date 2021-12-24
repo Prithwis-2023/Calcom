@@ -1142,7 +1142,15 @@ def main():
             continue
 
   elif E == "Financial Math":
-    pass
+    from bs4 import BeautifulSoup
+    import requests
+    cu_i = input("Enter currency to convert from: ")
+    cu_f = input("Enter currency to convert to: ") 
+    data = requests.get('https://www.google.com/search?q=1+{}+to+{}'.format(cu_i, cu_f)).text
+    soup = BeautifulSoup(data, 'lxml')
+    amt = soup.find('span', class_='DFlfde SwHCTb') #buggy code
+    print(amt) 
+    #print("Curremcy Converter\n==============================================")
           
   elif E == "Linear Algebra":
     import tkinter as tk
