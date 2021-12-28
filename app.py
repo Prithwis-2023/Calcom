@@ -1118,7 +1118,7 @@ def main():
     print("<----------------------------------------------------->")
     def wolfram():
         input_wolfram = input("Enter your expression/question: ")
-        app_id = "UY8J28-KPKYW5Y2RT"
+        app_id = "UY8J28-REUQGGRJRT"
         client = wolframalpha.Client(app_id)
         result = client.query(input_wolfram)
         try:
