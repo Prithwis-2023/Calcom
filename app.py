@@ -1141,7 +1141,7 @@ def main():
         elif contin.lower() in ["yes", "y"]:
             continue
 
-  elif E == "Financial Math":
+  elif E == "Time Converter":
     from bs4 import BeautifulSoup
     import requests
     cu_i = input("Enter currency to convert from: ")
