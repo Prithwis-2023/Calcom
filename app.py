@@ -1142,6 +1142,8 @@ def main():
             continue
 
   elif E == "Time Converter":
+    print("<---------------Powered by CS50---------------->")
+    time.sleep(3)
     webbrowser.open('time.cs50.io')
           
   elif E == "Linear Algebra":
