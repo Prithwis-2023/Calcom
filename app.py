@@ -18,9 +18,9 @@ def main():
   #print("<------------------------------------------------------------------------------------------------->")
   print(f"Please select from the following operations:")
   print("<------------------------------------------->")
-  print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================")
+  print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================\nTime Converter\n=============================================")
   E = input(f"Enter the operation: ")
-  feature_list = ["Basic Operations", "Roots of Polynomials", "Logarithmic Operations", "Number Theory", "Trigonometric Operations", "Graphs", "Calculus", "Combinatorial Calculations", "Area Calculations", "Volume Calculations", "Base Conversion", "MiniCalc", "Fun Zone", "Linear Algebra", "Means", "System of Equations"]
+  feature_list = ["Basic Operations", "Roots of Polynomials", "Logarithmic Operations", "Number Theory", "Trigonometric Operations", "Graphs", "Calculus", "Combinatorial Calculations", "Area Calculations", "Volume Calculations", "Base Conversion", "MiniCalc", "Fun Zone", "Linear Algebra", "Means", "System of Equations", 'Time Converter']
   while (E not in feature_list):
       print("Wrong Input! Please try again.")
       E = input("Enter the operation: ")
@@ -1142,15 +1142,7 @@ def main():
             continue
 
   elif E == "Time Converter":
-    from bs4 import BeautifulSoup
-    import requests
-    cu_i = input("Enter currency to convert from: ")
-    cu_f = input("Enter currency to convert to: ") 
-    data = requests.get('https://www.google.com/search?q=1+{}+to+{}'.format(cu_i, cu_f)).text
-    soup = BeautifulSoup(data, 'lxml')
-    amt = soup.find('span', class_='DFlfde SwHCTb') #buggy code
-    print(amt) 
-    #print("Curremcy Converter\n==============================================")
+    webbrowser.open('time.cs50.io')
           
   elif E == "Linear Algebra":
     import tkinter as tk
