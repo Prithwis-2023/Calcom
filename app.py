@@ -18,9 +18,9 @@ def main():
   #print("<------------------------------------------------------------------------------------------------->")
   print(f"Please select from the following operations:")
   print("<------------------------------------------->")
-  print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================\nFinancial Math\n=============================================")
+  print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================")
   E = input(f"Enter the operation: ")
-  feature_list = ["Basic Operations", "Roots of Polynomials", "Logarithmic Operations", "Number Theory", "Trigonometric Operations", "Graphs", "Calculus", "Combinatorial Calculations", "Area Calculations", "Volume Calculations", "Base Conversion", "MiniCalc", "Fun Zone", "Linear Algebra", "Means", "System of Equations", "Financial Math"]
+  feature_list = ["Basic Operations", "Roots of Polynomials", "Logarithmic Operations", "Number Theory", "Trigonometric Operations", "Graphs", "Calculus", "Combinatorial Calculations", "Area Calculations", "Volume Calculations", "Base Conversion", "MiniCalc", "Fun Zone", "Linear Algebra", "Means", "System of Equations"]
   while (E not in feature_list):
       print("Wrong Input! Please try again.")
       E = input("Enter the operation: ")
@@ -597,7 +597,7 @@ def main():
               exp_list[i] == "**" 
           lb = input("Enter the lower bound: ")
           ub = input("Enter the upper bound: ")
-          print("=================Result====================")
+          print("==================Result====================")
           print(integrate(exp, (x, lb, ub)))
         
         elif opt == "Double Integration":  
@@ -660,7 +660,7 @@ def main():
         ex = []
         ex.append(exp)
         res = Jacobian(str1, ex)
-        print("================================RESULT=================================")
+        print("================================Result=================================")
         print(res)
         print("=======================================================================")
         print("In the result a**b means a^b. Remember this for future results as well!")
