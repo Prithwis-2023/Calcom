@@ -664,54 +664,7 @@ def main():
         print(res)
         print("=======================================================================")
         print("In the result a**b means a^b. Remember this for future results as well!")
-      '''
-      elif opt == "Find Hessian":
-          import sympy as sym
-          import numpy as np
-          def Jacobian(v_str, f_list):
-            vars = sym.symbols(v_str)
-            f = sym.sympify(f_list)
-            J = sym.zeros(len(f),len(vars))
-            for i, fi in enumerate(f):
-              for j, s in enumerate(vars):
-                J[i,j] = sym.diff(fi, s)
-            return J
-          var = int(input("Enter the number of variables: "))
-          ls = []
-          ls_cp = []
-          for i in range(var):
-            v = input("Enter the variable {}: ".format(i+1))
-            ls.append(v)
-            ls_cp.append(v)
-            ls.append(' ')
-          str1 = "" 
-          for ele in ls: 
-            str1 += ele
-          #print(str1)
-          exp = input("Enter the multivariable function: ")
-          change = [char for char in exp]
-          for i in range(len(change)):
-            if change[i] == "^":
-              change[i] == "**"
-          ex = []
-          ex.append(exp)
-          res = Jacobian(str1, ex)
-          res = np.array(res)
-          hes = [] 
-          for vari in ls_cp:
-            #left to be done
-            for ele in res:
-              dif = sym.diff(ele, vari)
-              hes.append(dif)
-          from itertools import slice
-          length_to_split = []
-          for i in range(len(ls_cp)):
-            length_to_split.append(len(ls_cp))
-          Output = [list(islice(hes, elem))
-                   for elem in length_to_split]
-          output = np.array(Output)         
-          print(output)
-      '''    
+  
     while True:
       calculus()
       contin = ""
