@@ -18,9 +18,9 @@ def main():
   #print("<------------------------------------------------------------------------------------------------->")
   print(f"Please select from the following operations:")
   print("<------------------------------------------->")
-  print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================\nTime Converter(Ext.)\n=============================================")
+  print(f"Basic Operations\n=============================================\nRoots of Polynomials\n=============================================\nLogarithmic Operations\n=============================================\nNumber Theory\n=============================================\nTrigonometric Operations\n=============================================\nGraphs\n=============================================\nCalculus\n=============================================\nCombinatorial Calculations\n=============================================\nSystem of Equations\n=============================================\nArea Calculations\n=============================================\nVolume Calculations\n=============================================\nBase Conversion\n=============================================\nMeans\n=============================================\nMiniCalc\n=============================================\nFun Zone\n=============================================\nLinear Algebra\n=============================================")
   E = input(f"Enter the operation: ")
-  feature_list = ["Basic Operations", "Roots of Polynomials", "Logarithmic Operations", "Number Theory", "Trigonometric Operations", "Graphs", "Calculus", "Combinatorial Calculations", "Area Calculations", "Volume Calculations", "Base Conversion", "MiniCalc", "Fun Zone", "Linear Algebra", "Means", "System of Equations", 'Time Converter(Ext.)']
+  feature_list = ["Basic Operations", "Roots of Polynomials", "Logarithmic Operations", "Number Theory", "Trigonometric Operations", "Graphs", "Calculus", "Combinatorial Calculations", "Area Calculations", "Volume Calculations", "Base Conversion", "MiniCalc", "Fun Zone", "Linear Algebra", "Means", "System of Equations"]
   while (E not in feature_list):
       print("Wrong Input! Please try again.")
       E = input("Enter the operation: ")
@@ -1093,13 +1093,13 @@ def main():
             break
         elif contin.lower() in ["yes", "y"]:
             continue
-
+    """          
   elif E == "Time Converter(Ext.)":
     import webbrowser
     print("<---------------Powered by CS50---------------->")
     time.sleep(3)
     webbrowser.open('https://time.cs50.io')
-          
+    """        
   elif E == "Linear Algebra":
     import tkinter as tk
     import numpy as np
