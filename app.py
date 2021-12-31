@@ -1095,6 +1095,7 @@ def main():
             continue
 
   elif E == "Time Converter(Ext.)":
+    import webbrowser
     print("<---------------Powered by CS50---------------->")
     time.sleep(3)
     webbrowser.open('https://time.cs50.io')
