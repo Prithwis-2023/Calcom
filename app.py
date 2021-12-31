@@ -1097,7 +1097,7 @@ def main():
   elif E == "Time Converter(Ext.)":
     print("<---------------Powered by CS50---------------->")
     time.sleep(3)
-    webbrowser.open('time.cs50.io')
+    webbrowser.open('https://time.cs50.io')
           
   elif E == "Linear Algebra":
     import tkinter as tk
