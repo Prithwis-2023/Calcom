@@ -532,9 +532,12 @@ def main():
     
   elif E == "Calculus":
     print("Instructions:")
+    print("-------------------------------------------")
     print(f"1) Use brackets appropiately for correct results.")
     print(f"2) Use exp() for e. Like e^x must be inputted as exp(x).")
     print(f"3) Always represent the variables as instructed.")
+    print(f"4) Use +infty or -infty for representing +infinity and -infinity.")
+    print(f"5) Use pi for representing the constant pi.")
     #print("5) Use oo for infinity.")
     def calculus():
       import sympy as sp
