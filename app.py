@@ -1714,11 +1714,13 @@ def main():
         print("~" , str(X))
 
       elif g == "G.C.D":
+        import math
         a = int(input("Enter the first number: "))
         b = int(input("Enter the second number: "))
         print(math.gcd(a,b))
 
       elif g == "L.C.M":
+        import math
         a = int(input("Enter the first number: "))
         b = int(input("Enter the second number: "))  
         gcd = math.gcd(a,b)
