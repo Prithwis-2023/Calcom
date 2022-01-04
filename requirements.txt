@@ -34,4 +34,4 @@ tk==0.1.0
 twilio==6.38.1
 wolframalpha==5.0.0
 wordcloud==1.8.1
-
+scipy==1.7.3
