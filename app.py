@@ -512,7 +512,7 @@ def main():
            ax.imshow(julia, interpolation='nearest', cmap=cm.gnuplot2)
            plt.axis('off')
            plt.show()
-           fig.savefig('julia_set.png', dpi=500)   
+           #fig.savefig('julia_set.png', dpi=500)   
         c = complex(input("Enter the complex number c (Eg. 1+2j): ")) 
         julia_set(c)                   
     while True:
