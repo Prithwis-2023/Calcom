@@ -520,8 +520,22 @@ def main():
         import matplotlib.pyplot as plt
         number = int(input("How many set of data points you want to plot, i.e. how many graphs do you want to have in one plot for comparison: "))
         for i in range(number):
-          print("<-------------Enter data points for Graph {}------------->".format(i+1))
-          
+          print("<-------------Enter details for Graph {}------------->".format(i+1))
+          points = int(input("Enter the number of data points that you want to plot: "))
+          x = []
+          y = []
+          for i in range(points):
+            c = input("Enter the coordinates of points 1 in the form of (x,y): ")
+            x.append(c[1])
+            y.append(c[3])
+          label_s = input("Enter Label for the graph: ")
+          plt.plot(x, y, label = label_s)
+        plt.xlabel('x-axis')
+        plt.ylabel('y-axis')
+        title_s = input("Enter title for the whole plot: ")
+        plt.title(title_s)
+        plt.legend()
+        plt.show()  
     while True:
       graphs()
       contin = ""
