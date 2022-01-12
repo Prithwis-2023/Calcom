@@ -1,3 +1,3 @@
-apt-get update
-apt-get install x11-xserver-utils
+sudo apt-get update
+sudo apt-get install x11-xserver-utils
 xhost +
