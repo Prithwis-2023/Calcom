@@ -233,12 +233,12 @@ def main():
       import numpy as np
       import tkinter as tk
       from tkinter import Tk, BOTTOM, BOTH
-      print("<------------------------------------------->\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================")
+      print("<------------------------------------------->\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================\nCustom Data Points\n=============================================")
       d=input("Please enter the type of the function: ")
-      f_list = ["Plane Trigonometric", "Exponential", "Logarithmic", "Polynomial", "Julia Sets"]
+      f_list = ["Plane Trigonometric", "Exponential", "Logarithmic", "Polynomial", "Julia Sets", "Custom Data Points"]
       while (d not in f_list):
         print("Wrong Input! Please try again.")
-        d = input("Please enter the type of the function: ")
+        d = input("Please enter the option: ")
       if d == "Plane Trigonometric":
         b=input("Enter the Trigonometric function (sin(x)/cos(x)/tan(x)): ")
         f_list = ["sin(x)", "cos(x)", "tan(x)"]
@@ -514,7 +514,14 @@ def main():
            plt.show()
            #fig.savefig('julia_set.png', dpi=500)   
         c = complex(input("Enter the complex number c (Eg. 1+2j): ")) 
-        julia_set(c)                   
+        julia_set(c)
+
+      elif d == "Custom Data Points":
+        import matplotlib.pyplot as plt
+        number = int(input("How many set of data points you want to plot, i.e. how many graphs do you want to have in one plot for comparison: "))
+        for i in range(number):
+          print("<-------------Enter data points for Graph {}------------->".format(i+1))
+          
     while True:
       graphs()
       contin = ""
