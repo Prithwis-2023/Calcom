@@ -532,7 +532,7 @@ def main():
           plt.plot(x, y, label = label_s)
         plt.xlabel('x-axis')
         plt.ylabel('y-axis')
-        title_s = input("Enter title for the entire plot: ")
+        title_s = input("Enter title for the whole plot: ")
         plt.title(title_s)
         plt.legend()
         plt.show()  
