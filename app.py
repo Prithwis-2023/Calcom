@@ -524,15 +524,15 @@ def main():
           points = int(input("Enter the number of data points that you want to plot: "))
           x = []
           y = []
-          for i in range(points):
-            c = input("Enter the coordinates of points 1 in the form of (x,y): ")
+          for k in range(points):
+            c = input("Enter the coordinates of the {} point of graph {} in the form of (x,y): ".format(k+1, i+1))
             x.append(c[1])
             y.append(c[3])
           label_s = input("Enter Label for the graph: ")
           plt.plot(x, y, label = label_s)
         plt.xlabel('x-axis')
         plt.ylabel('y-axis')
-        title_s = input("Enter title for the whole plot: ")
+        title_s = input("Enter title for the entire plot: ")
         plt.title(title_s)
         plt.legend()
         plt.show()  
