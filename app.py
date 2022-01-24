@@ -234,9 +234,9 @@ def main():
       import numpy as np
       import tkinter as tk
       from tkinter import Tk, BOTTOM, BOTH
-      print("<------------------------------------------->\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================\nCustom Data Points\n=============================================")
+      print("<------------------------------------------->\nPlane Trigonometric\n=============================================\nExponential\n=============================================\nLogarithmic\n=============================================\nPolynomial\n=============================================\nJulia Sets\n=============================================\nCustom Data Points\n=============================================\nLissajous Figures\n=============================================")
       d=input("Please enter the type of the function: ")
-      f_list = ["Plane Trigonometric", "Exponential", "Logarithmic", "Polynomial", "Julia Sets", "Custom Data Points"]
+      f_list = ["Plane Trigonometric", "Exponential", "Logarithmic", "Polynomial", "Julia Sets", "Custom Data Points", "Lissajous Figures"]
       while (d not in f_list):
         print("Wrong Input! Please try again.")
         d = input("Please enter the option: ")
@@ -536,7 +536,44 @@ def main():
         title_s = input("Enter title for the entire plot: ")
         plt.title(title_s)
         plt.legend()
-        plt.show()  
+        plt.show()
+      
+      elif d == "Lissajous Figures":
+        import matplotlib.pyplot as plt
+        from matplotlib import animation
+        import numpy as np
+
+        fig = plt.figure()
+        ax = plt.subplot()
+        plt.plot(0,0)
+        t = np.linspace(-2*np.pi, 2*np.pi, 1000)
+        print("""Parametric equation of Lissajous Curves:\n
+        x = A * sin(at + d)\n
+        y = B * sin(bt)\n
+        =================================================\n
+        Enter the values of A, B, a, b and d. 
+        """)
+        A = float(input("Enter the value of A: "))
+        B = float(input("Enter the value of B: "))
+        a = float(input("Enter the value of a: "))
+        d = float(input("Enter the value of d: "))
+        b = float(input("Enter the value of b: "))
+
+        def animate(i):
+          if i < 500:
+            a = b * (0.01 * i)
+          else:
+            a = b * (0.01 * (1000-i))  
+                  
+          x = A * np.sin(a*t + d)
+          y = B * np.sin(b*t)
+          ax.clear()      
+          plt.plot(x, y, c = "#E02050", lw = '5')
+          return fig,
+          
+        ani = animation.FuncAnimation(fig, animate, frames = 1000, interval=20, blit=False)
+        plt.show()
+
     while True:
       graphs()
       contin = ""
