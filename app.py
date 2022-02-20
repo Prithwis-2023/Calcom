@@ -1623,7 +1623,7 @@ def main():
                     win_mess = True
                 i += 1
             if win_mess == True:
-                print(f"Congratulations {person}!! You are the winner! gg")
+                print(f"Congratulations {person}!! You are the winner!")
                 break
             turn += 1
 
