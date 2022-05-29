@@ -2,7 +2,7 @@ sudo apt update
 sudo apt install docker.io
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
-sudo docker pull pycalcx/calcom:latest
+sudo docker pull prithwisdev/calcom:latest
 sudo apt-get update
 sudo apt-get install x11-xserver-utils
 xhost +
