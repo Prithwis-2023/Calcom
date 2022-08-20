@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+Calcom/Calcom.egg-info/PKG-INFO
+Calcom/Calcom.egg-info/SOURCES.txt
+Calcom/Calcom.egg-info/dependency_links.txt
+Calcom/Calcom.egg-info/top_level.txt
