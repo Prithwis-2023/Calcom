@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Calcom
+Version: 1.0.0
+Summary: Calcom is an advanced and completely free tool for mathematical computation created and managed by the developers at PyCalc X.
+Home-page: https://github.com/Prithwis-2023/Calcom
+Author: Prithwis Das
+Author-email: prithwisdas2017@gmail.com
+Project-URL: Bug Tracker, https://github.com/Prithwis-2023/Calcom/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: X11 Applications
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
